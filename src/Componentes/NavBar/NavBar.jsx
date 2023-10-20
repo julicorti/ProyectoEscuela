@@ -44,11 +44,12 @@ const NavBar = () => {
           </a>
          
           <a href="#" className="selected">
-            <div className="option">
+            <NavLink to="Historial"> <div className="option">
               
-              <box-icon id="icon" name="spreadsheet" color="#FFFFFF"></box-icon>
+              <box-icon  id="icon" name="spreadsheet" color="#FFFFFF"></box-icon>
               <h2>Historial</h2>
             </div>
+            </NavLink>
           </a>
           <a href="#" className="selected">
             <div className="option">

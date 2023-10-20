@@ -159,3 +159,14 @@ a.selected {
     left: -80px;
   }
 }
+@media (max-height: 1366px) {
+  #menu_side {
+    width: 20vw;
+    a.selected {
+      
+    #icon{
+      height: 40px;
+    }
+    }
+    }
+}
