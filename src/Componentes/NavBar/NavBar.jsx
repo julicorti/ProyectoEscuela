@@ -1,6 +1,7 @@
 import "boxicons";
 import "../../CSS/style.css";
 import { useEffect, useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 // import "../../js/script"
 const NavBar = () => {
   const [slider, setSlider] = useState(true);
@@ -22,19 +23,16 @@ const NavBar = () => {
         </header>
 
         <div
-          className="menu__side"
+          className={`menu__side ${slider? "hidden" :  ""}`}
           id="menu_side"
-          style={{
-            width: slider ? "0px" : "300px",
-            padding: slider ? "0px " : "20px",
-          }}
+          
         >
-          <div style={{ textAlign: "center" }} className="option">
+          <div style={{ textAlign: "center" }} className="namePage">
             <h1>Levare</h1>
           </div>
 
           <a href="#" className="selected">
-          <div className="option">
+          <NavLink to="/"><div className="option">
           <box-icon
                 name="home"
                 id="icon"
@@ -42,11 +40,12 @@ const NavBar = () => {
                 color="#FFFFFF"
               ></box-icon>
               <h2>Años</h2>
-            </div>
+            </div></NavLink>
           </a>
          
           <a href="#" className="selected">
             <div className="option">
+              
               <box-icon id="icon" name="spreadsheet" color="#FFFFFF"></box-icon>
               <h2>Historial</h2>
             </div>
@@ -58,10 +57,10 @@ const NavBar = () => {
             </div>
           </a>
           <a href="#" className="selected">
-            <div className="option">
+          <NavLink to="Login"><div className="option">
               <box-icon id="icon" name="undo" color="#FFFFFF"></box-icon>
               <h2>LogOut</h2>
-            </div>
+            </div></NavLink>
           </a>
         </div>
       </nav>
