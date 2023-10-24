@@ -51,13 +51,14 @@
 }
 .contenedor-año {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   color: rgb(0, 0, 0);
   object-fit: cover;
   height: 90vh;
   width: 100%;
   margin-top: 90px;
+  font-size: 40px;
   &::before {
     content: "";
     inset: 0;

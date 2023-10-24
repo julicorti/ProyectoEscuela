@@ -159,9 +159,9 @@ a.selected {
     left: -80px;
   }
 }
-@media (max-height: 1366px) {
+@media (min-height: 1366px) {
   #menu_side {
-    width: 20vw;
+    width: 15vw;
     a.selected {
       
     #icon{

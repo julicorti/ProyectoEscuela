@@ -5,6 +5,7 @@ import Primero from "./Componentes/Divisiones/Primero";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Segundo from "./Componentes/Divisiones/Segundo";
 import Historial from "./Componentes/Historial/Historial";
+
 function App() {
   return (
 
@@ -16,6 +17,7 @@ function App() {
           <Route path="/Login" element={<Login/>} />
           <Route path="/Primero" element={<Primero/>} />
           <Route path="/Historial" element={<Historial/>} />
+          <Route path="/Ciclo_lectivo/:year" element={<Año/>}/>
           </Routes>
 
     </BrowserRouter>

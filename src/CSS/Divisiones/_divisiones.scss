@@ -16,7 +16,7 @@
   height: 100vh;
   width: 100%;
   display: flex;
-  
+  justify-content: space-around;
   align-items: center;
     cursor: pointer;
   h1 {
@@ -34,8 +34,6 @@
     height: 65vh;
     width: 55vw;
     background-color: rgba(211, 211, 211, 0.884);
-    position: relative;
-    left: 300px;
     overflow-y: scroll;
     flex-direction: column;
     gap: 50px;
@@ -63,6 +61,7 @@
   .pagina-div {
   .contenedor-division {
     width: 40vw;
+    right: 200px;
   }
 }
 

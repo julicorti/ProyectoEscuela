@@ -44,7 +44,7 @@ const NavBar = () => {
           </a>
          
           <a href="#" className="selected">
-            <NavLink to="Historial"> <div className="option">
+            <NavLink to="/Historial"> <div className="option">
               
               <box-icon  id="icon" name="spreadsheet" color="#FFFFFF"></box-icon>
               <h2>Historial</h2>
@@ -58,7 +58,7 @@ const NavBar = () => {
             </div>
           </a>
           <a href="#" className="selected">
-          <NavLink to="Login"><div className="option">
+          <NavLink to="/Login"><div className="option">
               <box-icon id="icon" name="undo" color="#FFFFFF"></box-icon>
               <h2>LogOut</h2>
             </div></NavLink>
